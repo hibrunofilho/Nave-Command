@@ -1,16 +1,10 @@
 #!/bin/bash
 
-##############################################################################################################################################
+###################################################################
 # By Nave 🛸																																		   
 # www.nave.tk																																		   
-#																																						
-# Copyright © 2021-2022 Bruno Filho | All rights reserved - You may not copy, reproduce, distribute, publish, display, perform,							
-# modify, You may not alter or remove any copyright or other notice from copies of the content and you won't be able to sell 
-# this work either (NaveCommand), this code was entirely made by Bruno Filho, Nave Command to be used strictly for non-profit/non-commercial purposes, 
-# all installation files were downloaded from swcdn.apple.com (subdomain of apple.com) without any changes
-#
 # For any commercial permission please contact: bruno@brunofilho.tk
-##############################################################################################################################################
+####################################################################
 
 # Atalhos
 green="\033[01;32m"
