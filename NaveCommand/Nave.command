@@ -2,53 +2,43 @@
 
 ##############################################################################################################################################
 # By Nave 🛸																																		   
-# www.nave.tk																																		   																																				
-#
-#			Licença Pública Geral GNU 				
-#
-#    This program is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU General Public License as published by
-#    the Free Software Foundation, either version 3 of the License, or
-#    (at your option) any later version.
-#
-#    This program is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU General Public License for more details.
-#
-#    You should have received a copy of the GNU General Public License
-#    along with this program.  If not, see <https://www.gnu.org/licenses/>5.
+# www.nave.tk																																		   
+#																																						
+# Copyright © 2021-2022 Bruno Filho | All rights reserved - You may not copy, reproduce, distribute, publish, display, perform,							
+# modify, You may not alter or remove any copyright or other notice from copies of the content and you won't be able to sell 
+# this work either (NaveCommand), this code was entirely made by Bruno Filho, Nave Command to be used strictly for non-profit/non-commercial purposes, 
+# all installation files were downloaded from swcdn.apple.com (subdomain of apple.com) without any changes
 #
 # For any commercial permission please contact: bruno@brunofilho.tk
 ##############################################################################################################################################
 
 # Atalhos
-verde="\033[01;32m"
-vermelho="\033[01;35m"
+green="\033[01;32m"
+pink="\033[01;35m"
 azul="\033[01;36m"
-amarelo="\033[01;33m"
-azul_dark="\033[01;34m"
+yellow="\033[01;33m"
+blue="\033[01;34m"
 nave_dir_arq="/Users/`users`/Desktop/NaveCommand"
 link="http://www.nave.tk/download/Install.txt"
 link2="http://www.nave.tk/download/NaveCommand.zip"
-versao_local="1.0.5"
+local_version="1.0.6"
 
 inicio()
 {
 		clear
 		printf '\033[8;15;67t'
 		clear
-	    echo -e  ${amarelo}"*************************************"
-		echo -e  ${amarelo} "Seja bem-vindo(a): `users`" 
-		echo -e  ${amarelo} "Inicio "
-		echo -e  ${amarelo}"*************************************"
+	    echo -e  ${yellow}"*************************************"
+		echo -e  ${yellow} "Seja bem-vindo(a): `users`" 
+		echo -e  ${yellow} "Inicio "
+		echo -e  ${yellow}"*************************************"
 		echo ""
 		echo -e  ${azul}"# O que vc quer fazer?"
 		echo -e  ${azul}"# Informe o numero."
-		echo -e  ${amarelo}""
-		echo -e  ${verde}"1)  NaveCommand (fast macOS installer)"
-		echo -e  ${azul_dark}"2)  Criar pendrive bootavel do macOS (fast macOS installer on USB)"
-		echo -e  ${vermelho}""
+		echo -e  ${yellow}""
+		echo -e  ${green}"1)  NaveCommand (fast macOS installer)"
+		echo -e  ${blue}"2)  Criar pendrive bootavel do macOS (fast macOS installer on USB)"
+		echo -e  ${pink}""
 	
 		read -e -p " / " nave_option		
 	
@@ -67,32 +57,32 @@ inicio()
 escolher_a_versao()
 {
 	clear
-	printf '\033[8;22;64t'
+	printf '\033[8;23;66t'
 	chmod +x /tmp/utilitarios/Install.sh
 	source /tmp/utilitarios/Install.sh	
 	mkdir /tmp/navecommand
 	clear
-	echo -e  ${azul_dark}"#######################################################"
-	echo "################ N A V E - C O M M A N D ##############"
-	echo "############### ${links} ###################"
-	echo "################### versão: ${versao_local} #####################"
-	echo "#######################################################"
+	echo "###########################################"
+	echo -e ${blue}"# Nave Command 🛸 | www.nave.tk            "
+    echo -e ${green}"# Versão mais recente: $versao              "
+    echo -e ${pink}"# Versão que está rodando agora: $local_version   "
+    echo -e ${green}"###########################################"
 	echo ""
-	echo -e  ${amarelo}"Seja bem-vindo `Users` "
-	echo -e  ${verde}"Certifique que vc está conectado(a) a internet"
-	echo -e  ${azul_dark}""
+	echo -e  ${yellow}"Seja bem-vindo `Users` "
+	echo -e  ${green}"Certifique que vc está conectado(a) a internet"
+	echo -e  ${blue}""
 	echo -e   "/ Quais desses sistemas vc quer baixar?"
 	echo -e   "/ Informe o numero indicado."
 	echo ""
-	echo -e ${verde}  "#  1 - $highsierra_versao_instalador | $highsierra_nome_instalador"
-	echo -e ${verde}  "#  2 - $mojave_versao_instalador | $mojave_nome_instalador"
-	echo -e ${verde}  "#  3 - $catalina_versao_instalador | $catalina_nome_instalador"
+	echo -e ${green}  "#  1 - $highsierra_versao_instalador | $highsierra_nome_instalador"
+	echo -e ${green}  "#  2 - $mojave_versao_instalador | $mojave_nome_instalador"
+	echo -e ${green}  "#  3 - $catalina_versao_instalador | $catalina_nome_instalador"
 	echo -e ${azul}  "#  4 - $bigsur_versao_instalador  | $bigsur_nome_instalador"
 	echo -e ${azul}  "#  5 - $monterey_versao_instalador  | $monterey_nome_instalador"
 	echo ""
-	echo -e ${amarelo} "// N - Atualizar o NaveCommand 🛸 (versão mais recente: ${versao})"
-	echo -e  ${vermelho}""
-	echo -e  ${vermelho}""
+	echo -e ${yellow} "// N - Atualizar o NaveCommand 🛸 (versão mais recente: ${versao})"
+	echo -e  ${pink}""
+	echo -e  ${pink}""
 	
 	read -e -p " # " macos_versao
 	
@@ -142,9 +132,9 @@ update_navecommd()
 {
 	printf '\033[8;22;84t'
 	clear
-	echo -e ${azul_dark}"Atualizando para a ${versao}..."
+	echo -e ${blue}"Atualizando para a ${versao}..."
 	curl -L -s -o ~/Desktop/Nave-"${versao}".zip ${link2}
-	echo -e ${verde}"Pronto! a versao do seu NaveCommand já esta na mais recente"
+	echo -e ${green}"Pronto! a versao do seu NaveCommand já esta na mais recente"
 	echo -e ${azul}"A partir de agora passe a utilizar essa versão: /Users/`users`/Desktop/Nave-"${versao}".zip"
 	read -t 10
 	echo ""
@@ -159,7 +149,7 @@ importar_install()
 		rm -rf /tmp/utilitarios/
 		rm -rf /tmp/navecommand/
 		clear
-		echo -e ${verde}"🛸 Baixando o catalogo de sistemas para a instalação..."
+		echo -e ${green}"🛸 Baixando o catalogo de sistemas para a instalação..."
 		echo ""
 		mkdir /tmp/utilitarios/
 		curl -L -s -o /tmp/utilitarios/Install.sh ${link}
@@ -172,28 +162,28 @@ Download_Instalador_1()
 		####################################################################################################################
 		# Fazer o Download dos instaladores: macOS High Sierra, macOS Mojave e macOS Catalina
 		clear
-		echo -e ${verde}"🛸 Baixando o InstallAssistantAuto.pkg"
-		echo -e ${amarelo}""
+		echo -e ${green}"🛸 Baixando o InstallAssistantAuto.pkg"
+		echo -e ${yellow}""
 		curl -# -L -o /tmp/navecommand/InstallAssistantAuto.pkg http://swcdn.apple.com/content/downloads/${!link_instalador}/InstallAssistantAuto.pkg
 		clear
-		echo -e ${verde}"🛸 Baixando o AppleDiagnostics.chunklist"
-		echo -e ${amarelo}""
+		echo -e ${green}"🛸 Baixando o AppleDiagnostics.chunklist"
+		echo -e ${yellow}""
 		curl -# -L -o /tmp/navecommand/AppleDiagnostics.chunklist http://swcdn.apple.com/content/downloads/${!link_instalador}/AppleDiagnostics.chunklist
 		clear
-		echo -e ${verde}"🛸 Baixando o AppleDiagnostics.dmg"
-		echo -e ${amarelo}""
+		echo -e ${green}"🛸 Baixando o AppleDiagnostics.dmg"
+		echo -e ${yellow}""
 		curl -# -L -o /tmp/navecommand/AppleDiagnostics.dmg http://swcdn.apple.com/content/downloads/${!link_instalador}/AppleDiagnostics.dmg
 		clear
-		echo -e ${verde}"🛸 Baixando o BaseSystem.chunklist"
-		echo -e ${amarelo}""
+		echo -e ${green}"🛸 Baixando o BaseSystem.chunklist"
+		echo -e ${yellow}""
 		curl -# -L -o /tmp/navecommand/BaseSystem.chunklist http://swcdn.apple.com/content/downloads/${!link_instalador}/BaseSystem.chunklist
 		clear
-		echo -e ${verde}"🛸 Baixando o BaseSystem.dmg"
-		echo -e ${amarelo}""
+		echo -e ${green}"🛸 Baixando o BaseSystem.dmg"
+		echo -e ${yellow}""
 		curl -# -L -o /tmp/navecommand/BaseSystem.dmg http://swcdn.apple.com/content/downloads/${!link_instalador}/BaseSystem.dmg
 		clear
-		echo -e ${verde}"🛸 Baixando o InstallESD.dmg"
-		echo -e ${amarelo}""
+		echo -e ${green}"🛸 Baixando o InstallESD.dmg"
+		echo -e ${yellow}""
 		curl -# -L -o /tmp/navecommand/InstallESD.dmg http://swcdn.apple.com/content/downloads/${!link_instalador}/InstallESDDmg.pkg
 		clear
 		echo   "Ufa! arquivos de instalação ja baixados"
@@ -227,8 +217,8 @@ Download_Instalador_2()
 	##########################################################################################################################
 	# Fazer o Download dos instaladores: macOS Monterey e macOS Big Sur
 	clear
-	echo -e ${verde}"🛸 Baixando o InstallAssistant.pkg"
-	echo -e ${amarelo} ""
+	echo -e ${green}"🛸 Baixando o InstallAssistant.pkg"
+	echo -e ${yellow} ""
 	curl -# -L -o /tmp/navecommand/InstallAssistant.pkg http://swcdn.apple.com/content/downloads/${!link_instalador}/InstallAssistant.pkg
 	##########################################################################################################################
 }
@@ -238,7 +228,7 @@ Preparar_Instalador_2()
 	clear
 	##########################################################################################################################
 	#Compilar os Instaladores: macOS Monterey e macOS Big Sur
-	echo -e ${azul_dark}"Compilando o Instalador..."
+	echo -e ${blue}"Compilando o Instalador..."
 	cd /tmp/navecommand
 	mkdir ~/Desktop/NaveCommand
 	mkdir tar
@@ -258,7 +248,7 @@ USBmacOS_nomedopendrive()
 	###########################################################
 	# Informar o nome do pendrive
 	clear
-	echo -e ${verde}"Digite o nome do seu pendrive (exatamente)"
+	echo -e ${green}"Digite o nome do seu pendrive (exatamente)"
 	echo -e ${azul} ""
 	read -e -p " # " disco_usb
 	###########################################################
@@ -268,10 +258,10 @@ USBmacOS_nomedopendrive()
 USBmacOS()
 {
 	clear
-	echo -e ${verde}"Pronto! Seu instalador já foi criado, deseja criar um pendrive bootavel com esse sistema?"
+	echo -e ${green}"Pronto! Seu instalador já foi criado, deseja criar um pendrive bootavel com esse sistema?"
 	echo ""
-	echo -e ${verde}"S) Sim"
-	echo -e ${vermelho}"N) Não"
+	echo -e ${green}"S) Sim"
+	echo -e ${pink}"N) Não"
 	echo ""
 	
 	read -e -p " # " USB
@@ -298,8 +288,8 @@ Welcome_USB()
 	echo -e  ${azul} "Seja bem-vindo (`users`) ao USBmacOS"
 	echo -e  ${azul} ""
 	echo -e  ${azul}"******************************************************"
-	echo -e  ${amarelo}"Mova o applicativo de instalação para:"
-	echo -e  ${verde}"${nave_dir_arq}"
+	echo -e  ${yellow}"Mova o applicativo de instalação para:"
+	echo -e  ${green}"${nave_dir_arq}"
 	echo -e  ${azul} ""
 }		
 
@@ -347,7 +337,7 @@ Escolha_USB()
 Monterey()
 {
 	clear
-	echo -e ${amarelo} "Digite a sua senha ⬇️"
+	echo -e ${yellow} "Digite a sua senha ⬇️"
 	sudo $nave_dir_arq/Install\ macOS\ Monterey.app/Contents/Resources/createinstallmedia --volume /Volumes/$disco_usb
 	clear
 	echo "Pendrive Feito ✅ "
@@ -359,7 +349,7 @@ Monterey()
 Big_Sur()
 {
 	clear
-	echo -e ${amarelo} "Digite a sua senha ⬇️"
+	echo -e ${yellow} "Digite a sua senha ⬇️"
 	sudo $nave_dir_arq/Install\ macOS\ Big\ Sur.app/Contents/Resources/createinstallmedia --volume /Volumes/$disco_usb
 	clear
 	echo "Pendrive Feito ✅ "
@@ -370,7 +360,7 @@ Big_Sur()
 Catalina()
 {
 	clear
-	echo -e ${amarelo} "Digite a sua senha ⬇️"
+	echo -e ${yellow} "Digite a sua senha ⬇️"
 	sudo $nave_dir_arq/Install\ macOS\ Catalina.app/Contents/Resources/createinstallmedia --volume /Volumes/$disco_usb
 	clear
 	echo "Pendrive Feito ✅ "
@@ -381,7 +371,7 @@ Catalina()
 Mojave()
 {
 	clear
-	echo -e ${amarelo} "Digite a sua senha ⬇️"
+	echo -e ${yellow} "Digite a sua senha ⬇️"
 	sudo $nave_dir_arq/Install\ macOS\ Mojave.app/Contents/Resources/createinstallmedia --volume /Volumes/$disco_usb
 	clear
 	echo "Pendrive Feito ✅ "
@@ -392,7 +382,7 @@ Mojave()
 High_Sierra()
 {
 	clear
-	echo -e ${amarelo} "Digite a sua senha ⬇️"
+	echo -e ${yellow} "Digite a sua senha ⬇️"
 	sudo $nave_dir_arq/Install\ macOS\ High\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/$disco_usb
 	clear
 	echo "Pendrive Feito ✅ "
@@ -408,9 +398,9 @@ final()
 	clear
 	rm -rf /tmp/navecommand/
 	echo -e  ${azul}"Obrigado por usar o Nave Command 🛸"
-	echo -e  ${verde}"Download concluído! Espero que tenha gostado dessa experiência totalmente brasileira 🇧🇷"
-	echo -e  ${verde}"Contato caso queira dar sugestões para este projeto = dicas@nave.tk 🛸 🛠 "
-	echo -e  ${amarelo}
+	echo -e  ${green}"Download concluído! Espero que tenha gostado dessa experiência totalmente brasileira 🇧🇷"
+	echo -e  ${green}"Contato caso queira dar sugestões para este projeto = dicas@nave.tk 🛸 🛠 "
+	echo -e  ${yellow}
 	echo "                              _   _"                                             
 	echo "                             | \ | |"                                            
 	echo "                             |  \| | __ ___    _____"                            
