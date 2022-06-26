@@ -1,0 +1,36 @@
+#!/bin/bash
+
+###################################################################
+# By Nave 🛸
+# www.nave.tk
+# This script can ONLY be run together with "Nave Command"
+# For any commercial permission please contact: bruno@brunofilho.tk
+###################################################################
+#
+############################################################################################
+# Nomes
+highsierra_nome_instalador="Install macOS High Sierra"
+mojave_nome_instalador="Install macOS Mojave"
+catalina_nome_instalador="Install macOS Catalina"
+bigsur_nome_instalador="Install macOS Big Sur"
+monterey_nome_instalador="Install macOS Monterey"
+ventura_nome_instalador="Install macOS Ventura beta"
+#############################################################################################
+# ID'S
+highsierra_link_instalador="06/50/041-91758-A_M8T44LH2AW/b5r4og05fhbgatve4agwy4kgkzv07mdid9"
+mojave_link_instalador="17/32/061-26589-A_8GJTCGY9PC/25fhcu905eta7wau7aoafu8rvdm7k1j4el"
+catalina_link_instalador="61/24/001-57224/0o1xetys5n505gocjsil5qo0p4kg939elb"
+bigsur_link_instalador="/44/35/012-22320-A_AOID136T4U/g33x1akyjzjpkpe7z0xn7nguoakljpe3a8"
+monterey_link_instalador="16/08/012-06873-A_636SHHRD4L/528ojpmw00mulgfjsz9k50modkj31a9v0p"
+ventura_link_instalador="/38/13/012-20267-A_8II0GZVCTD/vsifpgvw3a3xjgyznf6415vin9xv7a6ws5"
+##############################################################################################
+# Versão
+highsierra_versao_instalador="10.13.6"
+mojave_versao_instalador="10.14.6"
+catalina_versao_instalador="10.15.7"
+monterey_versao_instalador="12.4  "
+bigsur_versao_instalador="11.6.7"
+ventura_versao_instalador="13.0  "
+###############################################################################################
+versao="1.0.9"
+###############################################################################################
