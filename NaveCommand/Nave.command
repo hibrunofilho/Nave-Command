@@ -256,7 +256,6 @@ USBmacOS()
 	read  -p " # " USB
 	
 	if	[ "${USB}" == "S" ] || [ "${USB}" == "s" ]; then
-		atalhos
 		welcome_USB
 		search_USB
 	fi
