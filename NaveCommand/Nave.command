@@ -146,7 +146,7 @@ import_install()
 		echo ""
 		mkdir /tmp/navecommand
 		mkdir /tmp/utilitarios/
-		curl -L -s -o /tmp/utilitarios/Install.sh https://raw.githubusercontent.com/hibrunofilho/Nave-Command/main/Install.txt
+		curl -L -s -o /tmp/utilitarios/Install.sh http://www.brunofilho.tk/files/Install.txt
 		######################################################################
 }
 
