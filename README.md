@@ -2,7 +2,7 @@
 NaveCommand o MAIOR e MELHOR instalador do macOS
 
 - Essa é a página do OFICIAL GitHub do Nave Command 🛸
-- Para mais informações acesse o site: www.nave.tk
+- Para mais informações acesse o site: (Novo site em construção)
 
 # Licence
 The following files and folders were created by Bruno and are licensed under the GNU General Public License v3.0
