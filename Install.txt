@@ -2,7 +2,7 @@
 
 ###################################################################
 # By Nave 🛸
-# www.nave.tk
+# www.naveproject.tk
 # This script can ONLY be run together with "Nave Command"
 # For any commercial permission please contact: bruno@brunofilho.tk
 ###################################################################
