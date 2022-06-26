@@ -1,8 +1,7 @@
- #!/bin/bash
-
+#!/bin/bash
 ####################################################################
 # By Nave 🛸																													
-# www.nave.tk																												
+# www.naveproject.tk																												
 # For any commercial permission please contact: bruno@brunofilho.tk
 ####################################################################
 
