@@ -2,7 +2,8 @@
 NaveCommand o MAIOR e MELHOR instalador do macOS
 
 - Essa é a página do OFICIAL GitHub do Nave Command 🛸
-- Para download clique aqui
+- Para download [clique aqui](https://github.com/hibrunofilho/Nave-Command/releases) 
+
 - Para mais informações acesse o site: (Novo site em construção)
 
 # Licence
