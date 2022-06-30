@@ -2,14 +2,10 @@
 NaveCommand o MAIOR e MELHOR instalador do macOS
 
 - Essa é a página do OFICIAL GitHub do Nave Command 🛸
-- Para download [clique aqui](https://github.com/hibrunofilho/Nave-Command/releases) 
-
-- Para mais informações acesse o site: (Novo site em construção)
+- *Para download* [clique aqui](https://github.com/hibrunofilho/Nave-Command/releases) 
 
 # Licence
 The following files and folders were created by Nave and are licensed under the GNU General Public License v3.0
 - Nave.command
 - Install.txt
 - nave
-
-"O Glorioso Retorno de Quem Nunca Esteve Aqui"
