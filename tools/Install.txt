@@ -5,7 +5,7 @@
 # This script can ONLY be run together with "Nave Command"
 # For any commercial permission please contact: bruno@brunofilho.tk
 ###############################################################################################
-versao="1.1.3"
+versao="1.1.4"
 catalina_installer_name="Install macOS Catalina"
 mojave_installer_name="Install macOS Mojave"
 highsierra_installer_name="Install macOS High Sierra"
